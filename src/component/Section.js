@@ -1,9 +1,22 @@
 import React, { useState } from "react"
+import { useDispatch } from "react-redux"
 import Data from "../Data"
 import "./Section.css"
+import { ADD } from "../actions/action"
 function Section() {
     const [card, setCard] = useState(Data)
-    console.log(card)
+    // console.log(card)
+    // setCard(card)
+
+    const dispatch = useDispatch();
+
+    const send = (e) => {
+
+        dispatch(ADD(e));
+
+    }
+
+
     return (
         <>
             <div className="section mt-4">
@@ -11,7 +24,7 @@ function Section() {
             </div>
             <div className="container ">
                 {
-                    card.map((element) => {
+                    card.map((element, id) => {
                         return (
                             <>
 
@@ -20,7 +33,7 @@ function Section() {
                                     <div class="card-body">
                                         <h5 class="card-title">{element.rname}</h5>
                                         <p class="card-text">price- ₹{element.price}</p>
-                                        <a href="/" class="btn btn-primary">ADD To Cart</a>
+                                        <button className="col-lg-12  btn btn-primary" onClick={() => send(element)}>ADD To Cart</button>
                                     </div>
                                 </div>
 
