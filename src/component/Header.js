@@ -43,14 +43,17 @@ function Header() {
         <>
             <nav class="navbar navbar-expand-lg bg-dark">
                 <div class="container-fluid">
-                    <a class="navbar-brand" style={{ color: 'white' }} href="/" >Add To Cart</a>
+                    <a class="navbar-brand" style={{ color: 'blue', fontWeight: '800' }} href="/" >SHREE SHYAM</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarScroll">
                         <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="/" style={{ color: 'white' }}>Home</a>
+                                <a class="nav-link active" aria-current="page" href="/" style={{ color: 'gray' }}>Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/newitem" style={{ color: 'gray' }}>About</a>
                             </li>
                         </ul>
                         <div className="last " data-bs-toggle="modal" data-bs-target="#exampleModal" >
