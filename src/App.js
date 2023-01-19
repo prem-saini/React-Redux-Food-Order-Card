@@ -10,7 +10,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Section />} />
-        <Route path='/newitem/:id' element={<NewItem />} />
+        <Route path='/newitem' element={<NewItem />} />
       </Routes>
     </div>
   );

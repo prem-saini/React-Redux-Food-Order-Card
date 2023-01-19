@@ -24,7 +24,7 @@ function Section() {
             </div>
             <div className="container ">
                 {
-                    card.map((element, id) => {
+                    card.map((element) => {
                         return (
                             <>
 

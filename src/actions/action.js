@@ -6,3 +6,17 @@ export const ADD = (item) => {
         payload: item
     }
 }
+
+export const DLT = (id) => {
+    return {
+        type: "REV_CART",
+        payload: id
+    }
+}
+
+export const REMOVE = (item) => {
+    return {
+        type: "REV_ONE",
+        payload: item
+    }
+}
